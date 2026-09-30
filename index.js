@@ -751,6 +751,7 @@ async function callLLMAPI(fullPrompt) {
 
     if (provider === 'vertexai') {
         parameters.vertexai_auth_mode = 'full';
+		parameters.vertexai_region = 'global';
     }
 
     if (extensionSettings.use_reverse_proxy) {
